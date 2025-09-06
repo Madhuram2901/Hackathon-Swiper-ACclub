@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Submission Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Upload New Hackathon</h2>
+            <p>Fill out the form below to create a new hackathon event</p>
+        </div>
+        
+        <div class="card-body">
+            <form id="hackathon-form">
+                <div class="form-group">
+                    <label for="hackathon-name">Hackathon Name</label>
+                    <div class="input-icon">
+                        <i class="fas fa-heading"></i>
+                        <input type="text" id="hackathon-name" class="form-control" placeholder="Enter hackathon name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-desc">Description</label>
+                    <div class="input-icon">
+                        <i class="fas fa-align-left"></i>
+                        <textarea id="hackathon-desc" class="form-control" rows="3" placeholder="Describe the hackathon"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-category">Hackathon Category</label>
+                    <div class="input-icon">
+                        <i class="fas fa-tags"></i>
+                        <select id="hackathon-category" class="form-control">
+                            <option value="">Select a category</option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="cyber">Cybersecurity</option>
+                            <option value="blockchain">Blockchain</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="iot">Internet of Things</option>
+                            <option value="data">Data Science</option>
+                            <option value="game">Game Development</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-start">Start Date & Time</label>
+                    <div class="input-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="datetime-local" id="hackathon-start" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-end">End Date & Time</label>
+                    <div class="input-icon">
+                        <i class="fas fa-calendar-check"></i>
+                        <input type="datetime-local" id="hackathon-end" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-venue">Venue Type</label>
+                    <div class="input-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <select id="hackathon-venue" class="form-control">
+                            <option value="">Select venue type</option>
+                            <option value="online">Online (Virtual)</option>
+                            <option value="offline">Offline (Physical Location)</option>
+                            <option value="hybrid">Hybrid (Both Online & Offline)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-fee">Registration Fee (INR)</label>
+                    <div class="input-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                        <input type="number" id="hackathon-fee" class="form-control" placeholder="0 for free">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-prize">Prize Information</label>
+                    <div class="input-icon">
+                        <i class="fas fa-trophy"></i>
+                        <input type="text" id="hackathon-prize" class="form-control" placeholder="E.g., INR 10,000 in prizes">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hackathon-team">Team Size</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user-friends"></i>
+                        <select id="hackathon-team" class="form-control">
+                            <option value="solo">Solo</option>
+                            <option value="2-4">2-4 Members</option>
+                            <option value="5+">5+ Members</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn"><i class="fas fa-plus"></i> Create Hackathon</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 HackathonSwiper | Secure Form</p>
+        </div>
+    </div>  
+</body>
+</html>

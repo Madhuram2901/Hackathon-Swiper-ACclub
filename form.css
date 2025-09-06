@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.header {
+    background: #4a6bdf;
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.header h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4a6bdf;
+    box-shadow: 0 0 0 3px rgba(74, 107, 223, 0.2);
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.btn {
+    background: #4a6bdf;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #3a5bd0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 107, 223, 0.25);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.input-icon .form-control {
+    padding-left: 40px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    background: #f9fafc;
+}
+
+@media (max-width: 600px) {
+    .card-body {
+        padding: 20px;
+    }
+    
+    .header {
+        padding: 20px;
+    }
+} 
